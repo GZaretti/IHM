@@ -417,6 +417,6 @@ class __TwigTemplate_54bbcdfdf91531801936ec8502bca44f207080a617beb248d602021f731
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "/home/zeed/IHM/notePorject/ihmnote/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "/home/zeed/IHM/IHM/notePorject/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
     }
 }

@@ -212,6 +212,6 @@ class __TwigTemplate_fd8f401a346951e525b6805da5afc186bc471d4d3aeecb6d1a631f13f60
 
     <a href=\"{{ path('note_new') }}\">Create new</a>
 {% endblock %}
-", "note/index.html.twig", "/home/zeed/IHM/notePorject/ihmnote/templates/note/index.html.twig");
+", "note/index.html.twig", "/home/zeed/IHM/IHM/notePorject/templates/note/index.html.twig");
     }
 }

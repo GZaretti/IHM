@@ -173,6 +173,6 @@ class __TwigTemplate_b53b736bad85ef1752f016a94dce8735db95d534f061dc7452aa15c6e8c
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/zeed/IHM/notePorject/ihmnote/templates/base.html.twig");
+", "base.html.twig", "/home/zeed/IHM/IHM/notePorject/templates/base.html.twig");
     }
 }

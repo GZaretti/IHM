@@ -471,6 +471,6 @@ class __TwigTemplate_7085daf1406c745880d35840b1c8bf6bf67715fbcdac2c2ed1370e8718b
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/twig.html.twig", "/home/zeed/IHM/notePorject/ihmnote/vendor/symfony/web-profiler-bundle/Resources/views/Collector/twig.html.twig");
+", "@WebProfiler/Collector/twig.html.twig", "/home/zeed/IHM/IHM/notePorject/vendor/symfony/web-profiler-bundle/Resources/views/Collector/twig.html.twig");
     }
 }

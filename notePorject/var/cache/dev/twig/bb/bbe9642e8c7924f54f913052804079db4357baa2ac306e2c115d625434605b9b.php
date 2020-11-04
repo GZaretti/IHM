@@ -81,6 +81,6 @@ class __TwigTemplate_6292248f05d6408d240cea3d1a02dd05c58f06185c418fc135143f10cce
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ note.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "note/_delete_form.html.twig", "/home/zeed/IHM/notePorject/ihmnote/templates/note/_delete_form.html.twig");
+", "note/_delete_form.html.twig", "/home/zeed/IHM/IHM/notePorject/templates/note/_delete_form.html.twig");
     }
 }

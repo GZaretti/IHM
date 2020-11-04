@@ -6,7 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controller\\NoteController' => $baseDir . '/src/Controller/NoteController.php',
+    'App\\Entity\\Note' => $baseDir . '/src/Entity/Note.php',
+    'App\\Form\\NoteType' => $baseDir . '/src/Form/NoteType.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
+    'App\\Repository\\NoteRepository' => $baseDir . '/src/Repository/NoteRepository.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Collator' => $vendorDir . '/symfony/intl/Resources/stubs/Collator.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',

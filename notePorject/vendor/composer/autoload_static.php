@@ -557,7 +557,11 @@ class ComposerStaticInitbba2ed0d14bf13e645aa3c429d8f84ec
     );
 
     public static $classMap = array (
+        'App\\Controller\\NoteController' => __DIR__ . '/../..' . '/src/Controller/NoteController.php',
+        'App\\Entity\\Note' => __DIR__ . '/../..' . '/src/Entity/Note.php',
+        'App\\Form\\NoteType' => __DIR__ . '/../..' . '/src/Form/NoteType.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
+        'App\\Repository\\NoteRepository' => __DIR__ . '/../..' . '/src/Repository/NoteRepository.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
