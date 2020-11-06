@@ -11,10 +11,12 @@
     <div class="grid">
         {% for note in notes %}
         <div class="item">
-            <div class="item-content">
-                {{ note.note }}
-                <input type="hidden" value="{{ note.dueDate ? note.dueDate|date('Y-m-d H:i:s') : '' }}" />
-            </div>
+            <a href="{{ path('note_show', {'id': note.id}) }}">
+                <div class="item-content">
+                    {{ note.note }}
+                    <input class="duedate" type="hidden" value="{{ note.dueDate ? note.dueDate|date('Y-m-d H:i:s') : '' }}" />
+                </div>
+            </a>
         </div>
         {% else %}
             <p>Aucune note enregistrée !</p>
