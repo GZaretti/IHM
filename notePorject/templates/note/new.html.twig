@@ -3,9 +3,32 @@
 {% block title %}New Note{% endblock %}
 
 {% block body %}
-    <h1>Create new Note</h1>
-
-    {{ include('note/_form.html.twig') }}
-
-    <a href="{{ path('note_index') }}">back to list</a>
+    <style>
+        .add-form {
+            background: #fff;
+            padding: 15px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        .add-form input[type="text"] {
+            width: 100%;
+            border: #8993a2 1px solid;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .add-form input[type="select"] {
+            width: 100%;
+            border: #8993a2 1px solid;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+    <div class="grid">
+        <div class="add-form">
+            {{ include('note/_form.html.twig') }}
+        </div>
+    </div>
+    <div class="nav">
+        <a class="add-button" href="{{ path('note_index') }}">Retourner à l'accueil</a>
+    </div>
 {% endblock %}

@@ -30,9 +30,9 @@
     </div>
 
     <div class="nav">
-        <a class="add-button" href="{{ path('note_index') }}">back to list</a>
+        <a class="add-button" href="{{ path('note_index') }}">Retour à l'accueil</a>
 
-        <a class="add-button" href="{{ path('note_edit', {'id': note.id}) }}">edit</a>
+        <a class="add-button" href="{{ path('note_edit', {'id': note.id}) }}">Modifier</a>
         {{ include('note/_delete_form.html.twig') }}
     </div>
 
