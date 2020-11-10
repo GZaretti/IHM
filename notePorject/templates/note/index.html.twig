@@ -14,7 +14,9 @@
             <a href="{{ path('note_show', {'id': note.id}) }}">
                 <div class="item-content">
                     {{ note.note }}
-                    <input class="duedate" type="hidden" value="{{ note.dueDate ? note.dueDate|date('Y-m-d H:i:s') : '' }}" />
+                    <input class="duedateday" type="hidden" value="{{ note.dueDate ? note.dueDate|date('d') : '' }}" />
+                    <input class="duedatemonth" type="hidden" value="{{ note.dueDate ? note.dueDate|date('m') : '' }}" />
+                    <input class="duedateyear" type="hidden" value="{{ note.dueDate ? note.dueDate|date('Y') : '' }}" />
                 </div>
             </a>
         </div>
@@ -22,4 +24,24 @@
             <p>Aucune note enregistrée !</p>
         {% endfor %}
     </div>
+
+    <script>
+        var currentDate = new Date($.now());
+        var day = currentDate.getDate();
+        var month = currentDate.getMonth() + 1;
+        var year = currentDate.getFullYear();
+
+        $(".item").each(function(){
+            var duedateDay = $(this).find(".item-content").find(".duedateday").val();
+            var duedateMonth = $(this).find(".item-content").find(".duedatemonth").val();
+            var duedateYear = $(this).find(".item-content").find(".duedateyear").val();
+
+            if(duedateYear == year && duedateMonth == month) {
+                console.log(day);
+                if(duedateDay - 1 == day) {
+                    $(this).css("background-color", "#ff1212");
+                }
+            }
+        });
+    </script>
 {% endblock %}
