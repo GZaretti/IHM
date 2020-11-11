@@ -4,25 +4,30 @@
 
 {% block body %}
     <style>
-        .grid {
+        .content {
             display: flex;
             flex-direction: row;
             justify-items: center;
             align-items: center;
         }
         .content-show {
-            background: #59687d;
-            color: #fff;
+            background: #fffb91;
+            color: #000;
+            font-family: "Freestyle Script";
             width: 400px;
             height: 400px;
             margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
         }
         .content-show p {
             font-size: 42px;
             text-align: center;
         }
     </style>
-    <div class="grid">
+    <div class="content">
         <div class="content-show">
             <p>{{ note.note }}</p>
             <p>{{ note.dueDate ? note.dueDate|date('d.m.Y H:i:s') : ''}}</p>

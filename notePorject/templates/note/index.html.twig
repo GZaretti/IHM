@@ -38,7 +38,7 @@
 
             if(duedateYear == year && duedateMonth == month) {
                 console.log(day);
-                if(duedateDay - 1 == day) {
+                if(duedateDay-day <= 1) {
                     $(this).css("background-color", "#ff1212");
                 }
             }
